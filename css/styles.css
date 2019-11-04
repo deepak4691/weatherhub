@@ -1,0 +1,101 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 0;
+  z-index: 0;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), url("../images/blue-sky-clouds-flying-55787.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+.logo-image{
+  height: 100px;
+  width: auto;
+}
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+  }
+  .row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+  }
+  .large-height{
+    height: 500px;
+  }
+  .footer {
+    background-color: #333;
+    color: wheat;
+    margin: 0px auto;
+    padding: 20px 0px;
+  }
+.container-fluid {
+    margin: 0px;
+    /*background: rgb(116, 193, 206);*/
+    color: floralwhite;
+  }
+  address {
+    font-size: 80%;
+    margin: 0px;
+    color: #947878;
+  }
+
+  .navbar-dark {
+    margin-top: 0%;
+    background-color: #333 !important;
+  }
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  .btn-social-icon{
+    margin: 10px;
+  }
+  .card{
+    color: rgb(185, 129, 24);
+    float: left;
+    margin: 20px; 
+    box-shadow: 3px 3px 11px;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("../images/galaxy.jpg");
+    background-size: auto 400px ;
+    transition: all 1s ease;
+}
+.card:hover{
+  background-size: auto 500px;
+}
+table{
+  background: #444444;
+}
+th{
+  background: #111;
+  color: #ccc;
+}
+input{
+  margin: 10px;
+  align-items: center;
+}
+.row{
+  margin: auto;
+
+}
+#showWeather{
+  margin: 30px auto 50px auto;
+}
+.showWeather{
+  border: 1px solid orangered;
+  padding: 25px;
+  border-radius: 30px;
+  background-color: rgba(255,228,175,0.3);
+  box-shadow: 4px 3px 10px orangered;
+}
+
+.forecastWeather{
+    color: #ccc;
+}
+.thide{
+  display: none;
+}

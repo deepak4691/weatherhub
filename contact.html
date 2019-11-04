@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WeatherHub
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+        <link rel="stylesheet" href="css/styles.css">    
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .my-form-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 1%;
+                font-family: sans-serif;
+                box-shadow: 1px 1px 3px 1px;
+                padding: 10px;
+
+            }
+            .instruction{
+                padding: 10px;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                font-size: 1.2rem;
+            }
+            
+
+            .frm{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 500px;
+                min-height: 100%;
+                padding: 3%;
+                background-color: #aaaaaa;
+                box-shadow: 1px 1px 6px;
+            }
+
+            .heading{
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .label{
+                font-weight: bolder;
+                font-size: 18px;
+                margin: 1% 0;
+            }
+
+            input{
+                margin: 1% 0 2% 0;
+                padding: 2%;
+                border: 0;
+                background-color: transparent;
+                border-bottom: 1px solid #333;
+            }
+            textarea{
+                margin: 1% 0 2% 0;
+                padding: 2%;
+                height: 80px;
+                border: 0;
+                background-color: transparent;
+                border: 1px solid #333;
+            }
+            .my-btn{
+                margin: 3% 0 1% 0;
+                font-size: 20px;
+                background-color: #333;
+                color: #ccc;
+                border: 0;
+                cursor: pointer;
+            }
+            .link{
+                font-size: 10px;
+                text-align: center;
+            }
+            .link a{
+                color: aqua;
+                color: darkblue;
+            }
+
+            input:focus, textarea:focus{
+                outline: none;
+            }
+
+
+            /* media queries */
+            @media (max-width: 800px){
+                .my-form-container{
+                    flex-direction: column;
+                }
+            }
+
+            @media (max-width: 500px){
+                .frm{
+                    width: 80vw;
+                    height: 100%;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+                      <div>
+                            <img src="./images/logo.svg" class="logo-image">
+                      </div> 
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                    <div class="container">
+                        
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                      </button> 
+                      <a class="navbar-brand mr-auto" href="./index.html"><img src="images/logo12.png" height="30" width="auto"> 
+                        </a>
+                        <div class="collapse navbar-collapse" id="Navbar">
+                                <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="./current.html">Current</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="./forcast.html">Forcast</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="./news.html">News</a></li>
+                                            <li class="nav-item active"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </nav>
+                <h2 class="heading">Contact Us</h2>
+                <div class="my-form-container">
+                
+                    <form action="#" method="post" class="frm">
+                        
+                        <label class="label">Name</label>
+                        <input type="text" placeholder="Your Name..">
+                        
+                        <label class="label">E-mail</label>
+                        <input type="email" placeholder="Email.." >
+                        
+                        <label class="label">Zip Code</label>
+                        <input type="tel" placeholder="Zip Code..">
+                        
+                        <label class="label">Comments</label>
+                        <textarea placeholder="Comments..."></textarea>
+                        
+                        <input type="submit" value="Submit" class="my-btn" >
+                    </form>
+                    
+                    <div class="instruction">
+                        <p>
+                            Please provide a valid email address or we will be unable to respond to your request. Please ensure that your computer is set to accept emails from us so that we can ensure the best assistance.
+                        </p>
+                        <p>
+                            All information collected on this page will be used for internal use only. We will not sell, distribute, or otherwise share your email address with outside organizations.
+                        </p>
+                    </div>
+        
+                </div>
+         
+                  
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">             
+                            <div class="col-5 offset-1 col-sm-2">
+                                <h5>Links</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./About.html">About</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-5">
+                                <h5>Our Address</h5>
+                                <address>
+                                  121, Lpu<br>
+                                  India<br>
+                                  Tel.: +852 1234 5678<br>
+                                  Fax: +852 8765 4321<br>
+                                  Email: <a href="mailto:weatherhub@gmail.com">weatherhub</a>
+                               </address>
+                            </div>
+                            <div class="col-sm align-self-center">
+                                <div style="text-align:center">
+                                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                                        <a class="btn btn-social-icon" href="mailto:weatherhub@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>        
+                                </div>
+                            </div>
+                       </div>
+                       <div class="row justify-content-center">             
+                            <div class="col-auto">
+                                <p>© Copyright 2019 weatherhub</p>
+                            </div>
+                       </div>
+                    </div>
+                </footer>
+                
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

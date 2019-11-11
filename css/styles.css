@@ -29,6 +29,8 @@ body {
     background-color: #333;
     color: wheat;
     margin: 0px auto;
+    margin-top: 20px;
+    
     padding: 20px 0px;
   }
 .container-fluid {
@@ -98,4 +100,8 @@ input{
 }
 .thide{
   display: none;
+}
+#myCarousel{
+  margin: auto;
+
 }

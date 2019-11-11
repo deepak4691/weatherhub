@@ -1,136 +1,148 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Forcast
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-        <link rel="stylesheet" href="css/styles.css">    
-    </head>
-    <body>
-        <div>
-            <img src="./images/logo.svg" class="logo-image">
-      </div> 
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-                    <div class="container">
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                          <span class="navbar-toggler-icon"></span>
-                      </button> 
-                      <a class="navbar-brand mr-auto" href="./index.html"><img src="images/logo12.png" height="30" width="auto"> 
-                        </a>
-                        <div class="collapse navbar-collapse" id="Navbar">
-                                <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="./current.html">Current</a></li>
-                                        <li class="nav-item active"><a class="nav-link" href="./forcast.html">Forcast</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="./news.html">News</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-                            </ul>  
-                        </div>
-                    </div>
-                </nav>
 
-<div class="container" style="height:1350px;">
-    <div class="row" >
-        <div class="col-md-12" style="margin-bottom:10px;">
-            <span id="error" class="text-center"></span>
-        </div>
-        
-        <div class="row form-group form-inline" id="cityDiv" style="margin-top: 20px;">
-           
-            <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name" style="margin: 10px;" >
-            <input type="text" name="days" id="days" class="form-control" placeholder="Next No. of Days" style="margin: 10px;" >
-            <button id="submitForecast" class="btn btn-primary">Search City</button>
-        </div>
+<head>
+    <title>
+        Forcast
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div>
+        <img src="./images/logo.svg" class="logo-image">
     </div>
-    
-    <div class="row" style="margin-top:30px">
-        <table class="table table-bordered table-dark table-striped">
-           <div id="header"  class="text-center"></div>
-           
-            <thead id="thead">
-                <tr>
-                    <th>Date</th>
-                    <th>Icon</th>
-                    <th>Weather</th>
-                    <th>Description</th>
-                    <th>Morning Temperature</th>
-                    <th>Night Temperature</th>
-                    <th>Min. Temperature</th>
-                    <th>Max. Temperature</th>
-                    <th>Pressure</th>
-                    <th>Humidity</th>
-                    <th>Wind Speed</th>
-                    <th>Wind Direction</th>
-                </tr>
-            </thead>
-            
-            <tbody id="forecastWeather" class="forecastWeather">
-                
-            </tbody>
-            
-        </table>
-    </div>
-    
-</div>
-
-
- 
-     
-<footer class="footer">
-    <div class="container">
-        <div class="row">             
-            <div class="col-5 offset-1 col-sm-2">
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./About.html">About</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="images/logo12.png" height="30" width="auto">
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./current.html">Current</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./forcast.html">Forcast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-5">
-                <h5>Our Address</h5>
-                <address>
-                  121, Lpu<br>
-                  India<br>
-                  Tel.: +852 1234 5678<br>
-                  Fax: +852 8765 4321<br>
-                  Email: <a href="mailto:weatherhub@gmail.com">weatherhub</a>
-               </address>
+        </div>
+    </nav>
+
+    <div class="container" style="height:1350px;">
+        <div class="row">
+            <div class="col-md-12" style="margin-bottom:10px;">
+                <span id="error" class="text-center"></span>
             </div>
-            <div class="col-sm align-self-center">
-                <div style="text-align:center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:weatherhub@gmail.com"><i class="fa fa-envelope fa-lg"></i></a>        
+
+            <div class="row form-group form-inline" id="cityDiv" style="margin-top: 20px;">
+
+                <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name"
+                    style="margin: 10px;">
+                <input type="text" name="days" id="days" class="form-control" placeholder="Next No. of Days"
+                    style="margin: 10px;">
+                <button id="submitForecast" class="btn btn-primary">Search City</button>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-top:30px">
+            <table class="table table-bordered table-dark table-striped">
+                <div id="header" class="text-center"></div>
+
+                <thead id="thead">
+                    <tr>
+                        <th>Date</th>
+                        <th>Icon</th>
+                        <th>Weather</th>
+                        <th>Description</th>
+                        <th>Morning Temperature</th>
+                        <th>Night Temperature</th>
+                        <th>Min. Temperature</th>
+                        <th>Max. Temperature</th>
+                        <th>Pressure</th>
+                        <th>Humidity</th>
+                        <th>Wind Speed</th>
+                        <th>Wind Direction</th>
+                    </tr>
+                </thead>
+
+                <tbody id="forecastWeather" class="forecastWeather">
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Lpu<br>
+                        India<br>
+                        Tel.: +852 1234 5678<br>
+                        Fax: +852 8765 4321<br>
+                        Email: <a href="mailto:weatherhub@gmail.com">weatherhub</a>
+                    </address>
+                </div>
+                <div class="col-sm align-self-center">
+                    <div style="text-align:center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:weatherhub@gmail.com"><i
+                                class="fa fa-envelope fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
-       </div>
-       <div class="row justify-content-center">             
-            <div class="col-auto">
-                <p>© Copyright 2019 weatherhub</p>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2019 weatherhub</p>
+                </div>
             </div>
-       </div>
-    </div>
-</footer>
+        </div>
+    </footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<script src="js/forcast.js"></script>   
-      
+    <script src="js/forcast.js"></script>
+
 </body>
+
 </html>

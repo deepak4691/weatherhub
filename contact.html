@@ -141,19 +141,19 @@
                 <h2 class="heading">Contact Us</h2>
                 <div class="my-form-container">
                 
-                    <form action="#" method="post" class="frm">
+                    <form action="" method="post" class="frm" id="frm">
                         
                         <label class="label">Name</label>
-                        <input type="text" placeholder="Your Name..">
+                        <input type="text" placeholder="Your Name.." required>
                         
                         <label class="label">E-mail</label>
-                        <input type="email" placeholder="Email.." >
+                        <input type="email" placeholder="Email.." required>
                         
                         <label class="label">Zip Code</label>
-                        <input type="tel" placeholder="Zip Code..">
+                        <input type="text" placeholder="Zip Code.." id="zip" required>
                         
                         <label class="label">Comments</label>
-                        <textarea placeholder="Comments..."></textarea>
+                        <textarea placeholder="Comments..." required></textarea>
                         
                         <input type="submit" value="Submit" class="my-btn" >
                     </form>
@@ -209,6 +209,24 @@
                     </div>
                 </footer>
                 
+        <script>
+            document.getElementById('frm').addEventListener('submit', function(e){
+                e.preventDefault();
+                var x = document.getElementById('zip').value;
+                var numbers = /^[0-9]+$/;
+                if(!x.match(numbers))
+                {
+                    alert('Only numbers are allowed in Zip Code');  
+                }
+                else if (x.length!=6){
+                    alert('Enter a six digit Zip Code');
+                }
+                else{
+                    alert("Thanks for your Feedback. We will contact you soon");
+                    window.open("./index.html", "_self");
+                }
+            });
+        </script>
                 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>

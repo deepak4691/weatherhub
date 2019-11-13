@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
         },
         error: function(){
-
+            alert("unable to fetch news");
         }
     })
     });
